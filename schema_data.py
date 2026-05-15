@@ -131,7 +131,12 @@ def seed_database(conn):
 
     artists = [
         # (artist_id, name, genre, origin_city),
-        (1, "TODO — Artist Name", "TODO — Genre", "TODO — City"),
+        (1,'J. Cole', 'Hip-Hop', 'Fayetteville'),
+        (2,'Kendrick Lamar', 'Hip-Hop', 'Compton'),
+        (3,'Eminem', 'Hip-Hop', 'St. Joseph'),
+        (4,'Drake', 'Hip-Hop', 'Toronto'),
+        (5,'Young Dolph', 'Hip-Hop', 'Chicago'),
+        (6,'Gucci Mane', 'Hip-Hop', 'Atlanta')
         # add at least 5 more rows ...
     ]
 
@@ -148,7 +153,12 @@ def seed_database(conn):
 
     tracks = [
         # (track_id, title, duration_seconds, artist_id),
-        (1, "TODO — Track Title", 200, 1),
+        (1,'Power trip', 241, 1), (2,'Work Out', 235, 1), (3,'Wet Dreamz', 239, 1),
+        (4,'Poetic Justice', 300, 2), (5,'Not Like Us', 254, 2), (6,'Money Trees', 387, 2),
+        (7,'Mockingbird', 251, 3), (8,'The Monster', 250, 3), (9,'Rap God', 363, 3),
+        (10,'Passionfruit', 300, 4), (11,'Headlines', 236, 4), (12,"Marvin's Room", 347, 4),
+        (13,'Major', 195, 5), (14,'Gelato', 204, 5), (15,'Drippy', 205, 5),
+        (16,'Both Eyes Closed', 260, 6), (17,'Met Gala', 210, 6), (18,'Back On Road', 150, 6)
         # add at least 17 more rows ...
     ]
 
@@ -163,7 +173,10 @@ def seed_database(conn):
 
     playlists = [
         # (playlist_id, playlist_name, owner_name),
-        (1, "TODO — Playlist Name", "TODO — Owner"),
+        (1,'Road Trip', 'Author1'),
+        (2,'Favorites', 'Author1'),
+        (3,'Late Night Bangers', 'Author2'),
+        (4,'Workout Mix', 'Integrator')
         # add at least 3 more rows ...
     ]
 
@@ -182,7 +195,10 @@ def seed_database(conn):
 
     playlist_tracks = [
         # (playlist_id, track_id, position),
-        (1, 1, 1),
+        (1, 1, 1), (1, 4, 2), (1, 10, 3), (1, 16, 4), (1, 13, 5),
+        (2, 2, 1), (2, 5, 2), (2, 11, 3), (2, 14, 4), (2, 17, 5),
+        (3, 7, 1), (3, 8, 2), (3, 9, 3), (3, 3, 4), (3, 6, 5),
+        (4, 12, 1), (4, 15, 2), (4, 18, 3), (4, 1, 4), (4, 2, 5)
         # add at least 19 more rows ...
     ]
 
